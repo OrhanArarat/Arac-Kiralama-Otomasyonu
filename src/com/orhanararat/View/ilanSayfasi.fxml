@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="anaGridPane" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          prefHeight="600.0" prefWidth="600.0" vgap="10.0" xmlns="http://javafx.com/javafx/9.0.4"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orhanararat.Controller.IlanController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="124.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="524.0" minWidth="10.0" prefWidth="152.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="524.0" minWidth="10.0" prefWidth="128.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="524.0" minWidth="10.0" prefWidth="166.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="130.0" minHeight="0.0" prefHeight="29.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="348.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="349.0" minHeight="0.0" prefHeight="31.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="349.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="349.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="349.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="349.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="349.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="349.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="349.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="349.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="349.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="349.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="349.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label prefWidth="67.0" text="Ilan Kayit" GridPane.rowIndex="1">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label text="Ilan Adi" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Arac Fiyat: " GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Arac Km: " GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Ilan Tarihi: " GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Arac Marka: " GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Sehir: " GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="tfIlanAdi" promptText="Ilan Adi" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="tfAracFiyat" promptText="Arac Fiyat" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="tfAracKm" promptText="Arac Km" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <DatePicker fx:id="dpIlanTarihi" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label text="Araba Kayit" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label text="Marka:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label text="Model:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label text="Vites turu:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Label text="Yakit Turu:" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label text="Renk:" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <TextField fx:id="tfMarka" promptText="Marka" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <TextField fx:id="tfModel" promptText="Model" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <ComboBox fx:id="cbMarka" prefHeight="27.0" prefWidth="169.0" promptText="Marka Seciniz" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <ComboBox fx:id="cbSehir" prefHeight="27.0" prefWidth="167.0" promptText="Sehir Seciniz" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <ComboBox fx:id="cbVitesTuru" prefHeight="27.0" prefWidth="172.0" promptText="Vites Seciniz" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <ComboBox fx:id="cbYakitTuru" prefHeight="27.0" prefWidth="170.0" promptText="Yakit Seciniz" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <ComboBox fx:id="cbRenk" prefHeight="27.0" prefWidth="171.0" promptText="Renk Seciniz" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+      <Button fx:id="btnIlanKayit" mnemonicParsing="false" onAction="#ilanEkle" text="Kaydet" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <Button fx:id="btnArabaKayit" mnemonicParsing="false" onAction="#arabaEkle" text="Kaydet" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Label text="Yakit Turu Kayit" GridPane.rowIndex="9">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label text="Yakit Turu: " GridPane.rowIndex="10" />
+      <Label text="Vites Turu Kayit" GridPane.columnIndex="2" GridPane.rowIndex="9">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label text="Vites Turu:" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+      <Label text="Renk Kayit" GridPane.rowIndex="12">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label text="Renk:" GridPane.rowIndex="13" />
+      <Label text="Sehir Kayit" GridPane.columnIndex="2" GridPane.rowIndex="12">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label text="Sehir:" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+      <TextField fx:id="tfYakitTuru" promptText="Yakit Turu" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <TextField fx:id="tfVitesTuru" promptText="Vites Turu" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+      <TextField fx:id="tfRenk" promptText="Renk" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+      <TextField fx:id="tfSehir" promptText="Sehir" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+      <Button fx:id="btnYakitKaydet" mnemonicParsing="false" onAction="#yakitEkle" text="Kaydet" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+      <Button fx:id="btnRenkKaydet" mnemonicParsing="false" onAction="#renkEkle" text="Kaydet" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+      <Button fx:id="btnVitesKaydet" mnemonicParsing="false" onAction="#vitesEkle" text="Kaydet" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+      <Button fx:id="btnSehirKaydet" mnemonicParsing="false" onAction="#sehirEkle" text="Kaydet" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+      <MenuBar prefHeight="29.0" prefWidth="507.0" GridPane.columnSpan="4">
+        <menus>
+          <Menu mnemonicParsing="false" text="Islem">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" onAction="#dialogPaneDelete"/>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Update" onAction="#dialogPaneUpdate"/>
+                <SeparatorMenuItem mnemonicParsing="false"></SeparatorMenuItem>
+                <MenuItem mnemonicParsing="false" text="Filtre" onAction="#dialogPaneFiltre"></MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</GridPane>

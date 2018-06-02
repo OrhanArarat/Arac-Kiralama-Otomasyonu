@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orhanararat.Controller.Update">
+
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <Label text="Ilan Guncelle" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <font>
+               <Font name="Times New Roman Bold" size="15.0" />
+            </font></Label>
+            <Label text="Ilani Seciniz" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cbIlanSec" promptText="Ilan Seciniz" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Ilan Adi" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="tfIlanAdi" promptText="Ilan Adi" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Arac Fiyati: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="tfAracFiyat" promptText="Arac Fiyati" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Arac Km: " GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <TextField fx:id="tfAracKm" promptText="Arac Km" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Ilan Tarihi" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <DatePicker fx:id="dpIlanTarihi" promptText="Ilan Tarihi" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Arac Marka" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <ComboBox fx:id="cbAracSec" promptText="Arac Seciniz" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="Sehir" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <ComboBox fx:id="cbSehirSec" promptText="Sehir Seciniz" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button fx:id="btnIlanGuncelle" onAction="#ilanGuncelle" text="Update" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+
+
+            <Label text="Araba Guncelle" GridPane.columnIndex="2" GridPane.rowIndex="0">
+            <font>
+               <Font name="Times New Roman Bold" size="15.0" />
+            </font></Label>
+            <Label text="Arabayi Seciniz" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cbArabaSec" promptText="Araba Seciniz" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label text="Marka: " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="tfMarka" promptText="Marka" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label text="Model: " GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="tfModel" promptText="Model" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label text="Vites Turu: " GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <ComboBox fx:id="cbVitesSec" promptText="Vites Seciniz" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label text="Yakit Seciniz: " GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <ComboBox fx:id="cbYakitSec" promptText="Yakit Seciniz" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label text="Renk" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <ComboBox fx:id="cbRenkSec" promptText="Renk Seciniz" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Button fx:id="btnArabaGuncelle" onAction="#arabaGuncelle" text="Update" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+
+            <Label text="Yakit Guncelle" GridPane.columnIndex="0" GridPane.rowIndex="9">
+            <font>
+               <Font name="Times New Roman Bold" size="15.0" />
+            </font></Label>
+            <Label text="Yakit Seciniz" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+            <ComboBox fx:id="cbYakitGuncelle" promptText="Yakit Seciniz" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label text="Yakit: " GridPane.columnIndex="0" GridPane.rowIndex="11" />
+            <TextField fx:id="tfYakit" promptText="Yakit Turu" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Button fx:id="btnYakitGuncelle" onAction="#yakitGuncelle" text="Update" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+
+            <Label text="Vites Guncelle" GridPane.columnIndex="2" GridPane.rowIndex="9">
+            <font>
+               <Font name="Times New Roman Bold" size="15.0" />
+            </font></Label>
+            <Label text="Vites Turu" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <ComboBox fx:id="cbVitesGuncelle" promptText="Vites Turu" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+            <Label text="Vites: " GridPane.columnIndex="2" GridPane.rowIndex="11" />
+            <TextField fx:id="tfVites" promptText="Vites Turu" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+            <Button fx:id="btnVitesGuncelle" onAction="#vitesGuncelle" text="Update" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+
+            <Label text="Renk Guncelle" GridPane.columnIndex="0" GridPane.rowIndex="13">
+            <font>
+               <Font name="Times New Roman Bold" size="15.0" />
+            </font></Label>
+            <Label text="Renk: " GridPane.columnIndex="0" GridPane.rowIndex="14" />
+            <ComboBox fx:id="cbRenkGuncelle" promptText="Renk Seciniz" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Label text="Renk" GridPane.columnIndex="0" GridPane.rowIndex="15" />
+            <TextField fx:id="tfRenk" promptText="Renk" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Button fx:id="btnRenkGuncelle" onAction="#renkGuncelle" text="Update" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+
+            <Label text="Sehir Guncelle" GridPane.columnIndex="2" GridPane.rowIndex="13">
+            <font>
+               <Font name="Times New Roman Bold" size="15.0" />
+            </font></Label>
+            <Label text="Sehir: " GridPane.columnIndex="2" GridPane.rowIndex="14" />
+            <ComboBox fx:id="cbSehirGuncelle" promptText="Sehir Seciniz" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+            <Label text="Sehir" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+            <TextField fx:id="tfSehir" promptText="Sehir" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+            <Button fx:id="btnSehirGuncelle" onAction="#sehirGuncelle" text="Update" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints maxWidth="190.0" minWidth="159.0" prefWidth="159.0" />
+            <ColumnConstraints maxWidth="172.0" minWidth="98.0" prefWidth="133.0" />
+            <ColumnConstraints maxWidth="163.0" minWidth="124.0" prefWidth="163.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="24.0" minHeight="17.0" prefHeight="23.0" />
+            <RowConstraints maxHeight="28.0" minHeight="19.0" prefHeight="20.0" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+
+
+        </GridPane>
+    </content>
+
+</DialogPane>
